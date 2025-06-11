@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Control de Asistencias</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Sistema de Control de Asistencias</h1>
+    </nav>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="estadisticas">Estadísticas Generales</button>
+            <button class="tab-btn" data-tab="ausentes">Registro de Ausentes</button>
+            <button class="tab-btn" data-tab="empresas">Ausencias por Empresa</button>
+        </div>
+
+        <div class="content">
+            <div id="estadisticas" class="tab-content active">
+                <div class="summary-cards"></div>
+                <div class="curso-list"></div>
+            </div>
+
+            <div id="ausentes" class="tab-content">
+                <div class="ausentes-list"></div>
+            </div>
+
+            <div id="empresas" class="tab-content">
+                <div class="empresa-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Última actualización: <span id="lastUpdate"></span></p>
+    </footer>
+
+    <script type="module" src="app2.js"></script>
+</body>
+</html>
